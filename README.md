@@ -2,7 +2,7 @@
 Official implementation of "[Neural Sequence-to-grid Module for Learning Symbolic Rules](https://arxiv.org/abs/2101.04921)" (AAAI 2021) by Segwang Kim, Hyoungwook Nam, Joonyoung Kim, and Kyomin Jung.
 
 This repository contains codes to build a network that follows the sequence-input grid-output structure, such as S2G-CNN, consisting of the seq2grid module and the grid decoder.
-Our seq2grid module that automatically segments and aligns the input sequence into a grid.
+Our seq2grid module automatically segments and aligns the input sequence into a grid.
 In particular, we implement the module using differentiable nested lists, which enables end-to-end training of the model without supervision for the alignment. 
 Experiments with number sequence prediction problems, computer program evaluation problems, algebraic word problems, and the babi QA tasks are possible.
 
