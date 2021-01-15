@@ -1,8 +1,9 @@
 # Neural Seq2grid Module
-Official Tensor2tensor implementation of "[Neural Sequence-to-grid Module for Learning Symbolic Rules](https://arxiv.org/abs/2101.04921)" (AAAI 2021) by Segwang Kim, Hyoungwook Nam, Joonyoung Kim, and Kyomin Jung.
+Official implementation of "[Neural Sequence-to-grid Module for Learning Symbolic Rules](https://arxiv.org/abs/2101.04921)" (AAAI 2021) by Segwang Kim, Hyoungwook Nam, Joonyoung Kim, and Kyomin Jung.
 
-This repository contains codes to build a network that follows the sequence-input grid-output structure such as S2G-CNN. 
-We implement our seq2grid module using differentiable nested lists, which enables end-to-end training of the model without domain-specific knowledge. 
+This repository contains codes to build a network that follows the sequence-input grid-output structure, such as S2G-CNN, consisting of the seq2grid module and the grid decoder.
+Our seq2grid module that automatically segments and aligns the input sequence into a grid.
+In particular, we implement the module using differentiable nested lists, which enables end-to-end training of the model without supervision for the alignment. 
 Experiments with number sequence prediction problems, computer program evaluation problems, algebraic word problems, and the babi QA tasks are possible.
 
 Run example_arithmetic_and_algorithmic.sh: Generate the algebraic word problem, train an S2G-ACNN and decode results from the S2G-ACNN.
